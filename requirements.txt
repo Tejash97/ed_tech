@@ -1,0 +1,10 @@
+langchain
+python-dotenv
+streamlit
+tiktoken
+faiss-cpu
+protobuf~=3.19.0
+groq
+langchain-groq
+langchain_community
+sentence_transformers
