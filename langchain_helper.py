@@ -22,7 +22,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 vectordb_file_path = "faiss_index"
 
 def create_vector_db():
-    loader = CSVLoader(file_path='/home/tejash.mishra/Downloads/ed_tech/q&a_data.csv',source_column="prompt")
+    loader = CSVLoader(file_path='q&a_data.csv',source_column="prompt")
     data = loader.load()
 
     vectordb = FAISS.from_documents(documents=data,
